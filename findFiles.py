@@ -82,7 +82,7 @@ if __name__ == '__main__':
                      "B2X1": [1530422217, 1530422402], "B2X2": [1530422428, 1530422612], "B2X3": [1530422639, 1530422823], "B2X4": [1530422849, 1530423033], "B2X5": [1530423060, 1530423243],
                      }
 
-    #prefix = "//eoscms//eos/cms"
+    #using old data
     dirListEOS = [ 
         "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias1/crab_CMSSW_10_1_7_ZeroBias1_splitPerBXTrue/180817_121608/0000/minituples_supersep/",
         "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias2/crab_CMSSW_10_1_7_ZeroBias2_splitPerBXTrue/180817_121630/0000/minituples_supersep/",
@@ -93,6 +93,31 @@ if __name__ == '__main__':
         "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias7/crab_CMSSW_10_1_7_ZeroBias7_splitPerBXTrue/180817_121826/0000/minituples_supersep/",
         "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias8/crab_CMSSW_10_1_7_ZeroBias8_splitPerBXTrue/180817_121848/0000/minituples_supersep/"
         ]
+
+
+    '''
+    #for legacy data 
+    dirListEOS = [ 
+        '/eos/cms/store/group/comm_luminosity/ULReReco/12Nov2019_UL2018/6868/'+
+        'ZeroBias1/crab_CMSSW_10_6_8_patch1_ZeroBias1_splitPerBXTrue/200622_194713/0000',
+        '/eos/cms/store/group/comm_luminosity/ULReReco/12Nov2019_UL2018/6868/'+
+        'ZeroBias2/crab_CMSSW_10_6_8_patch1_ZeroBias2_splitPerBXTrue/200622_194802/0000',
+        '/eos/cms/store/group/comm_luminosity/ULReReco/12Nov2019_UL2018/6868/'+
+        'ZeroBias3/crab_CMSSW_10_6_8_patch1_ZeroBias3_splitPerBXTrue/200622_194856/0000',
+        '/eos/cms/store/group/comm_luminosity/ULReReco/12Nov2019_UL2018/6868/'+
+        'ZeroBias4/crab_CMSSW_10_6_8_patch1_ZeroBias4_splitPerBXTrue/200622_195926/0000',
+        '/eos/cms/store/group/comm_luminosity/ULReReco/12Nov2019_UL2018/6868/'+
+        'ZeroBias5/crab_CMSSW_10_6_8_patch1_ZeroBias5_splitPerBXTrue/200622_195052/0000',
+        '/eos/cms/store/group/comm_luminosity/ULReReco/12Nov2019_UL2018/6868/'+
+        'ZeroBias6/crab_CMSSW_10_6_8_patch1_ZeroBias6_splitPerBXTrue/200622_195128/0000',
+        '/eos/cms/store/group/comm_luminosity/ULReReco/12Nov2019_UL2018/6868/'+
+        'ZeroBias7/crab_CMSSW_10_6_8_patch1_ZeroBias7_splitPerBXTrue/200622_200007/0000',
+        '/eos/cms/store/group/comm_luminosity/ULReReco/12Nov2019_UL2018/6868/'+
+        'ZeroBias8/crab_CMSSW_10_6_8_patch1_ZeroBias8_splitPerBXTrue/200622_195229/0000'
+        ]
+
+
+    '''
     filesForScan = {"B1Y1":[],"B1Y2":[],"B1Y3":[], "B1Y4":[], "B1Y5":[], "B1X1":[],"B1X2":[],"B1X3":[], "B1X4":[], "B1X5":[],"B2Y1":[],"B2Y2":[],"B2Y3":[], "B2Y4":[], "B2Y5":[], "B2X1":[],"B2X2":[],"B2X3":[], "B2X4":[], "B2X5":[]}
     fileswithLSinfo = []
 
