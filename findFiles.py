@@ -14,7 +14,10 @@ def pruneTrees(filename):
 
     namePrunedNtupleFile = whichZeroBias +"_"+ filename.split('/')[-1]
 
-    #####oldtree = file.Get("lumi/tree")
+    #for legacy data 
+    #oldtree = file.Get("lumi/tree")
+
+    #for old data 
     oldtree = file.Get("pccminitree")
 
     from array import array
@@ -143,7 +146,10 @@ if __name__ == '__main__':
         print filenames
         for filename in filenames:
             tfile=r.TFile.Open(filename)
-            ####ttree = tfile.Get("lumi/tree")
+            #for legacy data
+            #ttree = tfile.Get("lumi/tree")
+            
+            #for old data
             ttree = tfile.Get("pccminitree")
             searchCond = ""
             for scanName in LSscan:
